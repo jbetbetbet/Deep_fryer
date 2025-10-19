@@ -1,0 +1,53 @@
+version: "3.9"
+
+networks:
+  app:
+
+services:
+  deep-fryer:
+    build: ./deep-fryer
+    container_name: deep-fryer
+    networks: [app]
+    volumes:
+      - ./secrets/mitm/.mitmproxy:/home/mitmproxy/.mitmproxy:rw
+    command: >
+      mitmdump -s /opt/rewrite.py
+      -p 8080 --listen-host 0.0.0.0
+      --set confdir=/home/mitmproxy/.mitmproxy,connection_strategy=lazy,block_global=false
+    restart: unless-stopped
+
+  php74:
+    build: ./web/php74
+    container_name: php74
+    networks: [app]
+    environment:
+      # outbound through deep-fryer
+      HTTP_PROXY:  http://deep-fryer:8080
+      HTTPS_PROXY: http://deep-fryer:8080
+      NO_PROXY:    localhost,127.0.0.1,nginx,php74,deep-fryer
+
+      # trust the mitm CA inside image
+      SSL_CERT_FILE: /etc/ssl/certs/mitmproxy-ca.crt
+      CURL_CA_BUNDLE: /etc/ssl/certs/mitmproxy-ca.crt
+
+      # admin vars
+      ADMIN_USER: ${ADMIN_USER:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-change-me}
+      GITHUB_REPO: ${GITHUB_REPO:-}
+      GITHUB_BRANCH: ${GITHUB_BRANCH:-main}
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+    volumes:
+      - ./sites:/var/www/apps:rw
+      - ./templates:/var/www/templates:rw
+    restart: unless-stopped
+
+  nginx:
+    build: ./web/nginx
+    container_name: nginx
+    networks: [app]
+    depends_on: [php74]
+    ports:
+      - "80:80"
+    volumes:
+      - ./sites:/var/www/apps:ro
+    restart: unless-stopped

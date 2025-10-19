@@ -1,0 +1,26 @@
+{
+    "section": "VOD Applications",
+    "title": "Weyd",
+    "icon": "https://i.imgur.com/QIlYtTu.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services",
+            "target": "panel/weyd/weyd_servers.php",
+            "enabled": true
+        },
+        {
+            "title": "Users & Devices",
+            "target": "panel/weyd/weyd_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Settings & Scrapers",
+            "target": "panel/weyd/weyd_settings.php",
+            "enabled": true
+        }
+    ],
+    "version": "1.0.3",
+    "license": "cp2-module-bc12099ae67bf96c"
+}

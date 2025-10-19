@@ -1,0 +1,31 @@
+{
+    "section": "OTT Applications",
+    "title": "XCIPTV",
+    "icon": "https://i.imgur.com/piaorjB.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Customization",
+            "target": "panel/xciptv/ottrun_xciptv_customization.php",
+            "enabled": true
+        },
+        {
+            "title": "Messages & Announcements",
+            "target": "panel/xciptv/ottrun_xciptv_messaging.php",
+            "enabled": true
+        },
+        {
+            "title": "OpenVPN Config",
+            "target": "panel/xciptv/ottrun_xciptv_openvpn_config.php",
+            "enabled": true
+        },
+        {
+            "title": "Command Center",
+            "target": "panel/xciptv/ottrun_xciptv_command_center.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.5",
+    "license": "cp2-module-c4e78e688c2e18ed"
+}

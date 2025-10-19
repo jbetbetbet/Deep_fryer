@@ -1,0 +1,260 @@
+{
+    "section": "Android WebViews",
+    "title": "Custom WebViews",
+    "icon": "https://i.imgur.com/N55kp3Z.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Framed Views",
+            "target": "panel/webview/webview_frameview.php",
+            "enabled": true,
+            "type": "backdrop",
+            "href": "/webview/frameview.php",
+            "req": "curl",
+            "option": [
+                {
+                    "value": "frameview_layout_1",
+                    "inner": "Framed View: Layout 1",
+                    "query": "layout=layout_1"
+                },
+                {
+                    "value": "frameview_layout_2",
+                    "inner": "Framed View: Layout 2",
+                    "query": "layout=layout_2"
+                },
+                {
+                    "value": "frameview_layout_3",
+                    "inner": "Framed View: Layout 3",
+                    "query": "layout=layout_3"
+                }
+            ]
+        },
+        {
+            "title": "Media Slideshow",
+            "target": "panel/webview/webview_slideshow.php",
+            "enabled": true,
+            "type": "backdrop",
+            "href": "/webview/slideshow.php",
+            "req": "curl",
+            "option": [
+                {
+                    "value": "slideshow",
+                    "inner": "Slideshow",
+                    "query": ""
+                }
+            ]
+        },
+        {
+            "title": "TheSportsDB",
+            "target": "panel/webview/webview_thesportsdb.php",
+            "enabled": true,
+            "type": "sport",
+            "href": "/webview/thesportsdb.php",
+            "req": "curl",
+            "option": [
+                {
+                    "value": "sport_top",
+                    "inner": "TheSportsDB: Top",
+                    "query": "page=sport_top"
+                },
+                {
+                    "value": "sport_tv_today",
+                    "inner": "TheSportsDB: TV Today",
+                    "query": "page=sport_tv_today"
+                },
+                {
+                    "value": "sport_l_table",
+                    "inner": "TheSportsDB: League Table",
+                    "query": "page=sport_l_table"
+                },
+                {
+                    "value": "sport_l_cards",
+                    "inner": "TheSportsDB: League Cards",
+                    "query": "page=sport_l_cards"
+                }
+            ]
+        },
+        {
+            "title": "The Movie Database",
+            "target": "panel/webview/webview_tmdb.php",
+            "enabled": true,
+            "type": "backdrop",
+            "href": "/webview/tmdb.php",
+            "req": "curl",
+            "option": [
+                {
+                    "value": "tmdb_layout_1",
+                    "inner": "TMDB: Layout 1",
+                    "query": "layout=layout_1"
+                },
+                {
+                    "value": "tmdb_layout_2",
+                    "inner": "TMDB: Layout 2",
+                    "query": "layout=layout_2"
+                },
+                {
+                    "value": "tmdb_layout_3",
+                    "inner": "TMDB: Layout 3",
+                    "query": "layout=layout_3"
+                },
+                {
+                    "value": "tmdb_layout_4",
+                    "inner": "TMDB: Layout 4",
+                    "query": "layout=layout_4"
+                },
+                {
+                    "value": "tmdb_layout_5",
+                    "inner": "TMDB: Layout 5",
+                    "query": "layout=layout_5"
+                },
+                {
+                    "value": "tmdb_layout_6",
+                    "inner": "TMDB: Layout 6",
+                    "query": "layout=layout_6"
+                },
+                {
+                    "value": "tmdb_layout_7",
+                    "inner": "TMDB: Layout 7",
+                    "query": "layout=layout_7"
+                },
+                {
+                    "value": "tmdb_layout_8",
+                    "inner": "TMDB: Layout 8",
+                    "query": "layout=layout_8"
+                },
+                {
+                    "value": "tmdb_layout_9",
+                    "inner": "TMDB: Layout 9",
+                    "query": "layout=layout_9"
+                },
+                {
+                    "value": "tmdb_layout_10",
+                    "inner": "TMDB: Layout 10",
+                    "query": "layout=layout_10"
+                },
+                {
+                    "value": "tmdb_layout_11",
+                    "inner": "TMDB: Layout 11",
+                    "query": "layout=layout_11"
+                },
+                {
+                    "value": "tmdb_layout_12",
+                    "inner": "TMDB: Layout 12",
+                    "query": "layout=layout_12"
+                },
+                {
+                    "value": "tmdb_layout_13",
+                    "inner": "TMDB: Layout 13",
+                    "query": "layout=layout_13"
+                },
+                {
+                    "value": "tmdb_layout_14",
+                    "inner": "TMDB: Layout 14",
+                    "query": "layout=layout_14"
+                },
+                {
+                    "value": "tmdb_layout_15",
+                    "inner": "TMDB: Layout 15",
+                    "query": "layout=layout_15"
+                },
+                {
+                    "value": "tmdb_layout_16",
+                    "inner": "TMDB: Layout 16",
+                    "query": "layout=layout_16"
+                },
+                {
+                    "value": "tmdb_layout_17",
+                    "inner": "TMDB: Layout 17",
+                    "query": "layout=layout_17"
+                },
+                {
+                    "value": "tmdb_layout_18",
+                    "inner": "TMDB: Layout 18",
+                    "query": "layout=layout_18"
+                },
+                {
+                    "value": "tmdb_layout_19",
+                    "inner": "TMDB: Layout 19",
+                    "query": "layout=layout_19"
+                },
+                {
+                    "value": "tmdb_layout_20",
+                    "inner": "TMDB: Layout 20",
+                    "query": "layout=layout_20"
+                },
+                {
+                    "value": "tmdb_layout_21",
+                    "inner": "TMDB: Layout 21",
+                    "query": "layout=layout_21"
+                },
+                {
+                    "value": "tmdb_layout_22",
+                    "inner": "TMDB: Layout 22",
+                    "query": "layout=layout_22"
+                }
+            ]
+        },
+        {
+            "title": "TVSportGuide",
+            "target": "panel/webview/webview_tvsportguide.php",
+            "enabled": true,
+            "type": "sport",
+            "href": "/webview/tvsportguide.php",
+            "req": "curl",
+            "option": [
+                {
+                    "value": "tvsportguide",
+                    "inner": "TVSportGuide",
+                    "query": ""
+                }
+            ]
+        },
+        {
+            "title": "Sport-TV-Guide",
+            "target": "panel/webview/webview_sport_tv_guide.php",
+            "enabled": true,
+            "type": "sport",
+            "href": "/webview/sport_tv_guide.php",
+            "req": "redirect",
+            "option": [
+                {
+                    "value": "sport_tv_guide",
+                    "inner": "Sport-TV-Guide",
+                    "query": ""
+                }
+            ]
+        },
+        {
+            "title": "Website",
+            "target": "panel/webview/webview_website.php",
+            "enabled": true,
+            "type": "mixed",
+            "href": "/webview/website.php",
+            "req": "redirect",
+            "option": [
+                {
+                    "value": "website",
+                    "inner": "Website",
+                    "query": ""
+                }
+            ]
+        },
+        {
+            "title": "XXLinked",
+            "target": "panel/webview/webview_xxlinked.php",
+            "enabled": true,
+            "type": "mixed",
+            "href": "/webview/xxlinked.php",
+            "req": "redirect",
+            "option": [
+                {
+                    "value": "xxlinked",
+                    "inner": "XXLinked",
+                    "query": ""
+                }
+            ]
+        }
+    ],
+    "version": "2.6.1"
+}

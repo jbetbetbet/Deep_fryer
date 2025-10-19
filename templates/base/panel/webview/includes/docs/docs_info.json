@@ -1,0 +1,16 @@
+{
+    "section": "Android WebViews",
+    "title": "Custom WebViews",
+    "icon": "https://i.imgur.com/N55kp3Z.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/webview/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/webview/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

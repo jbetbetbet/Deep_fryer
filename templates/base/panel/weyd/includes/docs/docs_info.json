@@ -1,0 +1,16 @@
+{
+    "section": "VOD Applications",
+    "title": "Weyd",
+    "icon": "https://i.imgur.com/QIlYtTu.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/weyd/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/weyd/includes/docs/faq.php"
+        }
+    ],
+    "version": "1.0.0"
+}

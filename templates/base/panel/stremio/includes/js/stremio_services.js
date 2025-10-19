@@ -1,0 +1,250 @@
+/**
+ * Stremio Services JavaScript
+ * 
+ * Handles client-side functionality for the Stremio services management.
+ * 
+ * @package Cockpit
+ * @subpackage Stremio
+ * @author Ian O'Neill
+ * @version See version.json
+ */
+
+/**
+ * Gets the CSRF token from the page
+ * @returns {string} The CSRF token value
+ */
+function getCsrfToken() {
+    return $('input[name="csrf_token"]').val();
+}
+
+// Form submission handlers
+$(function () {
+    // Initialize toasts with auto-hide
+    $('.toast').each(function() {
+        var toast = new bootstrap.Toast(this);
+        toast.show();
+    });
+    
+    // Initialize datepicker with consistent formatting
+    $('#expiration').datepicker({
+        autoclose: true,
+        format: 'yyyy-mm-dd',
+        todayHighlight: true,
+        orientation: 'bottom auto',
+        clearBtn: true
+    });
+
+    // Service form submission
+    $("#post_service").on("submit", function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        formData.append('post_service', '1');
+        formData.append('csrf_token', getCsrfToken());
+
+        const submitBtn = $(this).find('button[type="submit"]');
+        const originalText = submitBtn.text();
+        submitBtn.prop('disabled', true).text('Saving...');
+
+        $.ajax({
+            type: "POST",
+            url: "./includes/post_stremio_services.php",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function () {
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                console.error("Error submitting service:", error);
+                submitBtn.prop('disabled', false).text(originalText);
+            }
+        });
+    });
+
+    // Client form submission
+    $("#post_client").on("submit", function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        formData.append('post_client', '1');
+        formData.append('csrf_token', getCsrfToken());
+
+        const submitBtn = $(this).find('button[type="submit"]');
+        const originalText = submitBtn.text();
+        submitBtn.prop('disabled', true).text('Saving...');
+
+        $.ajax({
+            type: "POST",
+            url: "./includes/post_stremio_services.php",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function () {
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                console.error("Error submitting client:", error);
+                submitBtn.prop('disabled', false).text(originalText);
+            }
+        });
+    });
+
+    // Clear cache form submission
+    $("#post_clearcache").on("submit", function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        formData.append('post_clearcache', '1');
+        formData.append('csrf_token', getCsrfToken());
+
+        $.ajax({
+            type: "POST",
+            url: "./includes/post_stremio_services.php",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function () {
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                console.error("Error clearing cache:", error);
+            }
+        });
+    });
+});
+
+/**
+ * Deletes a service after confirmation
+ * @param {number} id The ID of the service to delete
+ */
+function deleteService(id) {
+    if (confirm("Are you sure you want to delete this service?")) {
+        $.ajax({
+            type: "POST",
+            url: "./includes/post_stremio_services.php",
+            data: {
+                delete_service: 1,
+                id: id,
+                csrf_token: getCsrfToken()
+            },
+            success: function () {
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                console.error("Error deleting service:", error);
+            }
+        });
+    }
+}
+
+/**
+ * Deletes a client after confirmation
+ * @param {number} id The ID of the client to delete
+ */
+function deleteClient(id) {
+    if (confirm("Are you sure you want to delete this client?")) {
+        $.ajax({
+            type: "POST",
+            url: "./includes/post_stremio_services.php",
+            data: {
+                delete_client: 1,
+                id: id,
+                csrf_token: getCsrfToken()
+            },
+            success: function () {
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                console.error("Error deleting client:", error);
+            }
+        });
+    }
+}
+
+/**
+ * Bans a client after confirmation
+ * @param {number} id The ID of the client to ban
+ */
+function banClient(id) {
+    if (confirm("Are you sure you want to ban this client?")) {
+        $.ajax({
+            type: "POST",
+            url: "./includes/post_stremio_services.php",
+            data: {
+                ban_client: 1,
+                id: id,
+                csrf_token: getCsrfToken()
+            },
+            success: function () {
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                console.error("Error banning client:", error);
+            }
+        });
+    }
+}
+
+/**
+ * Unbans a client after confirmation
+ * @param {number} id The ID of the client to unban
+ */
+function unbanClient(id) {
+    if (confirm("Are you sure you want to unban this client?")) {
+        $.ajax({
+            type: "POST",
+            url: "./includes/post_stremio_services.php",
+            data: {
+                unban_client: 1,
+                id: id,
+                csrf_token: getCsrfToken()
+            },
+            success: function () {
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                console.error("Error unbanning client:", error);
+            }
+        });
+    }
+}
+
+/**
+ * Populates the service form with existing service data for editing
+ * @param {string} name The name of the service
+ * @param {string} url The URL of the service
+ * @param {number} id The ID of the service
+ */
+function editService(name, url, id) {
+    $("#name").val(name);
+    $("#url").val(url);
+    $("#name").focus();
+
+    //update button text
+    $("#post_service button[type='submit']").text("Update Service");
+
+    // Scroll to the form
+    $('html, body').animate({
+        scrollTop: $("#post_service").offset().top - 100
+    }, 500);
+}
+
+/**
+ * Populates the client form with existing client data for editing
+ * @param {string} username The username of the client
+ * @param {string} password The password of the client
+ * @param {string} expirey The expiration date of the client
+ * @param {number} id The ID of the client
+ */
+function editClient(username, password, expirey, id) {
+    $("#username").val(username);
+    $("#password").val(password);
+    $("#expiration").val(expirey);
+    $("#username").focus();
+
+    // Update button text
+    $("#post_client button[type='submit']").text("Update Client");
+
+    // Scroll to the form
+    $('html, body').animate({
+        scrollTop: $("#post_client").offset().top - 100
+    }, 500);
+}

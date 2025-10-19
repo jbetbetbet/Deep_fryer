@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "TiviMate",
+    "icon": "https://i.imgur.com/uRg0UxZ.png",
+    "target": "panel/tivimate/tivimate_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.2",
+    "license": "cp2-module-1075d5a926bb2d2e"
+}

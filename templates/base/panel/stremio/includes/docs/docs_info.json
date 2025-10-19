@@ -1,0 +1,16 @@
+{
+    "section": "VOD Applications",
+    "title": "Stremio",
+    "icon": "https://i.imgur.com/546Gr2o.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/stremio/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/stremio/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

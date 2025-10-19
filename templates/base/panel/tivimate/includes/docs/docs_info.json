@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "TiviMate",
+    "icon": "https://i.imgur.com/uRg0UxZ.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/tivimate/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/tivimate/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}
