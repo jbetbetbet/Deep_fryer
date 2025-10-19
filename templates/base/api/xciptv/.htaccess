@@ -1,0 +1,39 @@
+# 
+# Apache configuration for Cockpit XCIPTV Module
+# 
+# This file handles URL rewriting for the XCIPTV API
+# to provide clean URLs and protect sensitive files.
+#
+# @package Cockpit
+# @subpackage XCIPTV
+# @version See version.json
+
+# Enable URL rewriting engine
+RewriteEngine On
+
+# Legacy URL redirects - handle old ottrun URLs
+RewriteRule ^(.*)/ottrun(.*)$ $1/xciptv$2 [R=301,L]
+
+# WebSocket MQTT endpoint - handle without .php extension
+RewriteCond %{HTTP:Upgrade} websocket [NC]
+RewriteCond %{HTTP:Connection} upgrade [NC]
+RewriteRule ^mqtt_websocket/?$ mqtt_websocket.php [NC,L]
+
+# Regular MQTT endpoint redirect (fallback)
+RewriteRule ^mqtt_websocket/?$ mqtt_websocket.php [NC,L]
+
+# WebView redirects - map friendly URLs to webview.php controller
+RewriteRule ^(backdrop.php|adview.php)$ webview.php?fetch=background_alt [NC,L]
+RewriteRule ^(sport.php|sports.php)$ webview.php?fetch=sport [NC,L]
+RewriteRule ^sport_top.php$ webview.php?fetch=sport_top [NC,L]
+RewriteRule ^sport_tv_today.php$ webview.php?fetch=sport_tv_today [NC,L]
+RewriteRule ^sport_l_table.php$ webview.php?fetch=sport_l_table [NC,L]
+RewriteRule ^sport_l_cards.php$ webview.php?fetch=sport_l_cards [NC,L]
+
+# Media file redirects
+RewriteRule ^AnSIPTV.php?ans=intro$ media/intro.mp4 [NC,L]
+
+# Handle non-existent files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]

@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "9Xtream",
+    "icon": "https://i.imgur.com/1BuEnVi.png",
+    "target": "panel/9xtream/9xtream_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-967789ebfa1319b2"
+}

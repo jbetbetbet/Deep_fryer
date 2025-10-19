@@ -1,0 +1,20 @@
+RewriteEngine On
+
+<IfModule mod_headers.c>
+    Header always set Server "Smart-STB"
+    Header always unset X-Powered-By
+</IfModule>
+
+<Files "tos.php">
+    <IfModule mod_headers.c>
+        Header always set Server "Smart-STB"
+        Header always set Content-Type "text/html"
+    </IfModule>
+</Files>
+
+RewriteRule ^smarttv/api/4/login/?$ login.php [QSA,L]
+RewriteRule ^smarttv/api/4/code/?$ code.php [QSA,L]
+RewriteRule ^smarttv/system/pages/tos/tos.html?$ tos.php [QSA,L]
+RewriteRule ^smarttv/system/pages/tos/tos.css?$ tos.css [QSA,L]
+RewriteRule ^smarttv/api/4/recovery/?$ recovery.php [QSA,L]
+RewriteRule ^smarttv/api/4/activate/?$ activate.php [QSA,L]

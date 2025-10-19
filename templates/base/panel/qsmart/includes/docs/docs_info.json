@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "QSmart IPTV",
+    "icon": "https://i.imgur.com/838UOKW.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/qsmart/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/qsmart/includes/docs/faq.php"
+        }
+    ],
+    "version": "1.0.0"
+}

@@ -1,0 +1,21 @@
+{
+    "section": "VOD Applications",
+    "title": "Flix Vision",
+    "icon": "https://i.imgur.com/CQxNJjK.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Clients",
+            "target": "panel/flixvision/flixvision_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Configuration",
+            "target": "panel/flixvision/flixvision_config.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.1",
+    "license": "cp2-module-3d203e9b92b30524"
+}

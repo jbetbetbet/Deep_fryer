@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "QSmart IPTV",
+    "icon": "https://i.imgur.com/838UOKW.png",
+    "target": "panel/qsmart/qsmart_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "1.0.1",
+    "license": "cp2-module-4fbe336643a7ae50"
+}

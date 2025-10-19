@@ -1,0 +1,30 @@
+# Easy API URL Rewriting Configuration
+# This file configures URL rewriting for the Easy API module endpoints
+# It maps client-facing URLs to their proper PHP handler scripts for
+# compatibility with various versions of client applications
+
+# Enable the Apache rewrite engine
+RewriteEngine On
+
+# Configuration Endpoint
+# Maps the client-expected config.php URL to the actual API handler
+RewriteRule ^config\.php$ api.php [NC,L]
+
+# Main API Endpoints
+# Map various client versions of the main.php endpoint to the GP handler
+RewriteRule ^v1/main\.php$ gp.php [NC,L]
+RewriteRule ^main\.php$ gp.php [NC,L]
+
+# GP API Version Endpoints
+# Maps all version-specific JSON endpoints to the central GP handler
+# Supports any version number for future compatibility
+RewriteRule ^gp/v([0-9]+)\.json$ gp.php [NC,L]
+
+# RB API Version Endpoints
+# Maps all version-specific JSON endpoints to the central GP handler
+# Supports any version number for future compatibility
+RewriteRule ^rb/v([0-9]+)\.json$ gp.php [NC,L]
+
+# Flag Explanations:
+# NC = No Case, makes the rule case insensitive
+# L = Last rule, stop processing rules if this one matches

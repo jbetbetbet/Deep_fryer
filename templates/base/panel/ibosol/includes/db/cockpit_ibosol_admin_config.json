@@ -1,0 +1,11 @@
+{
+    "show_settings_card": "true",
+    "show_api_version": "true",
+    "show_opensubtitles_api_key": "true",
+    "show_notification_header": "true",
+    "show_notification_subtitle": "true",
+    "show_protected_playlists": "true",
+    "show_playlist_names": "true",
+    "show_api_specific_settings": "true",
+    "show_helper_card": "true"
+}

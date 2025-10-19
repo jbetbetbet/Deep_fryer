@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "NiO Player",
+    "icon": "https://i.imgur.com/WupguY4.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/nio/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/nio/includes/docs/faq.php"
+        }
+    ],
+    "version": "1.0.0"
+}

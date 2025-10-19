@@ -1,0 +1,16 @@
+{
+    "section": "VOD Applications",
+    "title": "HDO Box",
+    "icon": "https://i.imgur.com/GOgN9xF.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/hdobox/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/hdobox/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

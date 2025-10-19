@@ -1,0 +1,10 @@
+{
+    "section": "VPN Applications",
+    "title": "IPVanish",
+    "icon": "https://i.imgur.com/RjuF04C.png",
+    "target": "panel/ipvanish/ipvanish_config.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-518f63bf4824f878"
+}

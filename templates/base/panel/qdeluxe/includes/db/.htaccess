@@ -1,0 +1,11 @@
+<FilesMatch "\.(sqlite|json)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch ".*_admin.*\.json$">
+    Require all granted
+</FilesMatch>
+
+<Files "thesportsdb_leagues.json">
+    Require all granted
+</Files>

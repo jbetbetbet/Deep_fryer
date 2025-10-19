@@ -1,0 +1,21 @@
+{
+    "section": "VPN Applications",
+    "title": "ORVPN",
+    "icon": "https://i.imgur.com/OBzevBe.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Clients",
+            "target": "panel/orvpn/ottrun_orvpn_services.php",
+            "enabled": true
+        },
+        {
+            "title": "OpenVPN Config",
+            "target": "panel/orvpn/ottrun_orvpn_config.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.1",
+    "license": "cp2-module-b103bbbf0a3856b3"
+}

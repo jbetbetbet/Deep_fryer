@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Multi-service Proxy",
+    "icon": "https://i.imgur.com/mgtUBgN.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/proxy/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/proxy/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

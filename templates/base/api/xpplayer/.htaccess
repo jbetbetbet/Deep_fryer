@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^xp\.json$ xp.php [L]

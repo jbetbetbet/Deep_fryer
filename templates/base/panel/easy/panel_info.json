@@ -1,0 +1,21 @@
+{
+    "section": "OTT Applications",
+    "title": "Easy Player",
+    "icon": "https://i.imgur.com/etTrMvy.png",
+    "target": "panel/easy/easy_services.php",
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services",
+            "target": "panel/easy/easy_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Settings",
+            "target": "panel/easy/easy_settings.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.1",
+    "license": "cp2-module-71b10588a12a8306"
+}

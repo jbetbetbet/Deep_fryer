@@ -1,0 +1,21 @@
+# FlixVision API URL Rewriting Configuration
+# This file configures URL rewriting for the FlixVision module endpoints
+# It maps client-facing JSON endpoints to their PHP handler script
+
+# Enable the Apache rewrite engine
+RewriteEngine On
+
+# Configuration URL Mappings
+# Map various JSON endpoint names to the config.php processor
+# This allows clients to use different URL patterns while maintaining a single handler
+
+# Map cg.json requests to the config.php handler
+# This endpoint is used by legacy FlixVision clients
+RewriteRule ^cg\.json$ config.php [L]
+
+# Map conf.json requests to the config.php handler
+# This endpoint is used by newer FlixVision clients
+RewriteRule ^conf\.json$ config.php [L]
+
+# Flag Explanations:
+# L = Last rule, stop processing rules if this one matches

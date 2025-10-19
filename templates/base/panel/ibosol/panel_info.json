@@ -1,0 +1,26 @@
+{
+    "section": "OTT Applications",
+    "title": "IBO Solutions",
+    "icon": "https://i.imgur.com/z13H3dJ.png",
+    "target": "panel/ibosol/ibosol_services.php",
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Clients",
+            "target": "panel/ibosol/ibosol_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Configuration",
+            "target": "panel/ibosol/ibosol_config.php",
+            "enabled": true
+        },
+        {
+            "title": "Languages",
+            "target": "panel/ibosol/ibosol_languages.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.7",
+    "license": "cp2-module-075cb768f8c8c96b"
+}

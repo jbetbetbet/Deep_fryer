@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Flix IPTV",
+    "icon": "https://i.imgur.com/vf6hRKM.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/mega/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/mega/includes/docs/faq.php"
+        }
+    ],
+    "version": "1.0.0"
+}

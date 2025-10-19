@@ -1,0 +1,22 @@
+# Apache configuration for TiviMate API
+# Redirects and rewrites for the TiviMate API endpoints
+
+# Enable Apache rewrite engine
+RewriteEngine On
+
+# Streaming endpoint rewrites - handles paths with or without leading slash
+# Format: /live/username/password/stream - routes to live.php with path parameter
+RewriteRule ^(live|movie|series|timeshift)/(.*)$ $1.php?path=$2 [NC,L]
+RewriteRule ^/(live|movie|series|timeshift)/(.*)$ $1.php?path=$2 [NC,L]
+
+# API endpoint rewrites - maps legacy endpoints to new handlers
+# Maps getmydns.php to the main index handler
+RewriteRule ^(api/getmydns.php)$ index.php [NC,L]
+
+# Sport content endpoint rewrites - maps various sport URLs to webview handler
+RewriteRule ^(sport.php|sports.php|api/sport.php|api/sports.php)$ webview.php?fetch=sport [NC,L]
+RewriteRule ^sport_top.php$ webview.php?fetch=sport_top [NC,L]
+RewriteRule ^sport_tv_today.php$ webview.php?fetch=sport_tv_today [NC,L]
+
+# Health check endpoint
+RewriteRule ^check$ check.php [NC,L]

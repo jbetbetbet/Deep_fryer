@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "1-Stream Player",
+    "icon": "https://i.imgur.com/NC7ceih.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/1stream/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/1stream/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

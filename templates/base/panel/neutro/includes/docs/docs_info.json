@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Neutro Player",
+    "icon": "https://i.imgur.com/RS7RItF.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/neutro/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/neutro/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

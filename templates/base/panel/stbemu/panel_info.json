@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "StbEmu Pro",
+    "icon": "https://i.imgur.com/8D7TCZO.png",
+    "target": "panel/stbemu/stbemu_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "1.0.0",
+    "license": "cp2-module-4cb0bd5b3254b026"
+}

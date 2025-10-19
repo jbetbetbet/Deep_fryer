@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "1-Stream Player",
+    "icon": "https://i.imgur.com/NC7ceih.png",
+    "target": "panel/1stream/1stream_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-d38e4c4d7d46ee67"
+}

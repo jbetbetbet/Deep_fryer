@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Hot Player",
+    "icon": "https://i.imgur.com/lYsDvIm.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/hot/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/hot/includes/docs/faq.php"
+        }
+    ],
+    "version": "1.0.0"
+}

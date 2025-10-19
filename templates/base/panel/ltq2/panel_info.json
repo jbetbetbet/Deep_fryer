@@ -1,0 +1,21 @@
+{
+    "section": "OTT Applications",
+    "title": "LTQ2",
+    "icon": "https://i.imgur.com/5GYEXZD.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services",
+            "target": "panel/ltq2/ltq2_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Configuration",
+            "target": "panel/ltq2/ltq2_config.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.1",
+    "license": "cp2-module-dc5f99d3fd00f476"
+}

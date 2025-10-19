@@ -1,0 +1,12 @@
+{
+    "show_settings_card": "true",
+    "show_version_code": "true",
+    "show_apk_url": "true",
+    "show_package_name": "true",
+    "show_force_update": "true",
+    "show_ovpn_url": "true",
+    "show_register_button_url": "true",
+    "show_sports_select": "true",
+    "show_banners_card": "true",
+    "show_appstore_card": "true"
+}

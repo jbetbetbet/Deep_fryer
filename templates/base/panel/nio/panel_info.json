@@ -1,0 +1,21 @@
+{
+    "section": "OTT Applications",
+    "title": "NiO Player",
+    "icon": "https://i.imgur.com/WupguY4.png",
+    "target": "panel/nio/nio_services.php",
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Clients",
+            "target": "panel/nio/nio_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Notifications",
+            "target": "panel/nio/nio_notifications.php",
+            "enabled": true
+        }
+    ],
+    "version": "1.0.0",
+    "license": "cp2-module-0ef6f7fa5f3b5ee3"
+}

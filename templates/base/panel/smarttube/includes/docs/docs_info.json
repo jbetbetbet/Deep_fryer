@@ -1,0 +1,16 @@
+{
+    "section": "VOD Applications",
+    "title": "SmartTube",
+    "icon": "https://i.imgur.com/dOjhvLv.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/smarttube/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/smarttube/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

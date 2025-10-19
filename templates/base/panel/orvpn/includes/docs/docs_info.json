@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "ORVPN",
+    "icon": "https://i.imgur.com/OBzevBe.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/orvpn/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/orvpn/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

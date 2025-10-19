@@ -1,0 +1,7 @@
+{
+    "show_settings_card": "true",
+    "show_services_card": "true",
+    "show_clients_card": "true",
+    "show_sorting_methods_card": "true",
+    "show_openvpn_configuration_card": "true"
+}

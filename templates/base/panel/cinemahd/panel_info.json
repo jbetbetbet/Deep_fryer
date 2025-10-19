@@ -1,0 +1,21 @@
+{
+    "section": "VOD Applications",
+    "title": "CinemaHD",
+    "icon": "https://i.imgur.com/ryHBvdy.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Clients",
+            "target": "panel/cinemahd/cinemahd_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Configuration",
+            "target": "panel/cinemahd/cinemahd_config.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.1",
+    "license": "cp2-module-b4d716b7673d099c"
+}

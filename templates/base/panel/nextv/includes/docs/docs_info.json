@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "NexTv IPTV",
+    "icon": "https://i.imgur.com/PkmigBn.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/nextv/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/nextv/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

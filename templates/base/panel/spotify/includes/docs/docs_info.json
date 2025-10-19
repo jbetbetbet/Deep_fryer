@@ -1,0 +1,16 @@
+{
+    "section": "Other Applications",
+    "title": "Spotify",
+    "icon": "https://i.imgur.com/AuFg7HJ.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/spotify/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/spotify/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

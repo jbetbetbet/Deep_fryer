@@ -1,0 +1,16 @@
+{
+    "section": "Store Applications",
+    "title": "Downloader",
+    "icon": "https://i.imgur.com/cKvEC3w.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/downloader/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/downloader/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Q Deluxe",
+    "icon": "https://i.imgur.com/msQojuX.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/qdeluxe/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/qdeluxe/includes/docs/faq.php"
+        }
+    ],
+    "version": "1.0.0"
+}

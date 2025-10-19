@@ -1,0 +1,70 @@
+# Cockpit Proxy Service
+#
+# This .htaccess file configures URL rewriting for the Cockpit Proxy API service.
+# It handles routing for live streams, movies, series, and timeshift content,
+# directing requests to the appropriate handler scripts while maintaining a clean URL structure.
+#
+# @package Cockpit
+# @subpackage Proxy
+# @version See version.json
+
+# Disable directory listing for security
+Options -Indexes
+
+# Enable rewrite engine
+RewriteEngine on
+
+# Configure rewrite options
+RewriteOptions InheritDown
+
+# Only process rewrite rules if the requested path is not an existing file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Media Content Routing
+# ---------------------
+# Route media content requests to their specific handlers
+# Format: /content-type/path → content-type.php?path=path
+
+# Handle live streams, movies, series, and timeshift paths
+RewriteRule ^(live|movie|series|timeshift)/(.*)$ $1.php?path=$2 [NC,L]
+
+# Legacy timeshift URL compatibility
+RewriteRule ^streaming/timeshift\.php$ timeshift.php [L]
+
+# Default Route
+# ------------
+# Route all other requests to index.php, preserving query parameters
+# Exclude PHP files and already handled media paths
+
+# Allow direct access to PHP files
+RewriteCond %{REQUEST_URI} !\.php$ [NC]
+RewriteCond %{REQUEST_URI} !^/(live|movie|series|timeshift)/ [NC]
+RewriteRule ^(.*)$ index.php?path=$1 [QSA,L]
+
+# Security Headers
+# --------------
+# Prevent MIME type sniffing
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Disable content embedding on external sites
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Enable browser XSS protection
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# PHP Settings
+# -----------
+# Optimize PHP for proxy operations
+<IfModule mod_php7.c>
+    # Increase execution time for stream processing
+    php_value max_execution_time 300
+    
+    # Increase memory limit for larger streams
+    php_value memory_limit 256M
+    
+    # Disable error display in production
+    php_flag display_errors off
+</IfModule>

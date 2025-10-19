@@ -1,0 +1,4 @@
+<FilesMatch "\.(sqlite|json|csv)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

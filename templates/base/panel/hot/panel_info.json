@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "Hot Player",
+    "icon": "https://i.imgur.com/lYsDvIm.png",
+    "target": "panel/hot/hot_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "1.0.0",
+    "license": "cp2-module-b987ef7d246e4b27"
+}

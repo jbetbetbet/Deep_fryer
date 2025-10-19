@@ -1,0 +1,21 @@
+{
+    "section": "OTT Applications",
+    "title": "FCD Box",
+    "icon": "https://i.imgur.com/Q0Et9PS.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Clients & Services",
+            "target": "panel/fcd/fcd_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Configuration",
+            "target": "panel/fcd/fcd_settings.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.1",
+    "license": "cp2-module-0d52c8121c580ce0"
+}

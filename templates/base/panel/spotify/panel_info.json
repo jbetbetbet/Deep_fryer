@@ -1,0 +1,9 @@
+{
+    "section": "Other Applications",
+    "title": "Spotify",
+    "icon": "https://i.imgur.com/AuFg7HJ.png",
+    "target": "panel/spotify/spotify_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.0"
+}

@@ -1,0 +1,10 @@
+{
+    "section": "VPN Applications",
+    "title": "Private Internet Access",
+    "icon": "https://i.imgur.com/FMV7wcF.png",
+    "target": "panel/pia/pia_config.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-c252418d2de3adb3"
+}

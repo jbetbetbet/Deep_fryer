@@ -1,0 +1,21 @@
+{
+    "section": "VOD Applications",
+    "title": "Stremio",
+    "icon": "https://i.imgur.com/546Gr2o.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Clients",
+            "target": "panel/stremio/stremio_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Addon Configuration",
+            "target": "panel/stremio/stremio_addon_config.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.3",
+    "license": "cp2-module-cbc7fd3dc7b34ef4"
+}

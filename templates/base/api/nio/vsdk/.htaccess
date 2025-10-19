@@ -1,0 +1,17 @@
+# Purple VSDK API - URL Rewriting Configuration
+#
+# This .htaccess file configures URL rewriting for the Purple VSDK API service.
+# It handles routing for JSON requests to the appropriate handler script.
+#
+# @package Cockpit
+# @subpackage Purple
+# @version See version.json
+
+# Enable rewrite engine for URL routing
+RewriteEngine On
+
+# VSDK Tag Routing
+# ---------------
+# Routes JSON tag requests to the tag handling script
+# Format: /vsdk/NAME.json → /vsdk/tag.php?ping=NAME
+RewriteRule ^vsdk/([^.]+)\.json$ /vsdk/tag.php?ping=$1 [L,QSA]

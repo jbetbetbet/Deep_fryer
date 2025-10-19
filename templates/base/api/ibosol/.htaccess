@@ -1,0 +1,73 @@
+RewriteEngine On
+
+# 1. Rewrite specific URL to register.php
+RewriteRule ^manage-playlists/login/$ register.php [NC,QSA,L]
+
+# 2. Handle backdrop.php and sport.php
+RewriteRule ^backdrop.php$ webview.php?fetch=background_alt [NC,QSA,L]
+RewriteRule ^main_movies.php$ webview.php?fetch=background_alt [NC,QSA,L]
+RewriteRule ^sport.php$ webview.php?fetch=sport [NC,QSA,L]
+RewriteRule ^sport$ webview.php?fetch=sport [NC,QSA,L]
+RewriteRule ^PLGUIDE.php$ webview.php?fetch=sport_l_table [NC,QSA,L]
+RewriteRule ^webview.php$ webview.php?fetch=sport [NC,QSA,L]
+
+# 3. Patch for 3.9 differential
+RewriteCond %{REQUEST_URI} ^([0-9]+\.[0-9]+)/(.+)$
+RewriteRule ^([0-9]+\.[0-9]+)/(.*)$ index.php?version=$1&route=$2 [L,QSA]
+
+# 4. Handle various routes
+RewriteRule ^apk/version(.+?)$ index.php?route=apk/version$1 [NC,QSA,L]
+RewriteRule ^portal/getportalinfo_(.+?)$ index.php?route=portal/getportalinfo_$1 [NC,QSA,L]
+RewriteRule ^update/updaterequest_(.+?)$ index.php?route=update/updaterequest_$1 [NC,QSA,L]
+RewriteRule ^update/updaterequest_set_(.+?)$ index.php?route=update/updaterequest_set_$1 [NC,QSA,L]
+
+# 5. Handle appInfo/getappinfo_
+RewriteRule ^appInfo/getappinfo_(.+?)$ index.php?route=appInfo/getappinfo_$1 [NC,QSA,L]
+
+# 6. Handle playlists and playlists/delete
+RewriteRule ^playlists$ index.php?route=playlists [NC,QSA,L]
+RewriteRule ^playlists.php$ index.php?route=playlists [NC,QSA,L]
+RewriteRule ^playlists/delete$ index.php?route=playlists/delete [NC,QSA,L]
+RewriteRule ^delete.php$ index.php?route=playlists/delete [NC,QSA,L]
+RewriteRule ^playlists-delete.php$ index.php?route=playlists/delete [NC,QSA,L]
+RewriteRule ^delete_playlist.php$ index.php?route=playlists/delete [NC,QSA,L]
+
+# 7. Handle parent-control/update
+RewriteRule ^parent-control/update$ index.php?route=parent-control/update [NC,QSA,L]
+RewriteRule ^parent-control-update.php$ index.php?route=parent-control/update [NC,QSA,L]
+RewriteRule ^parent_control.php$ index.php?route=parent-control/update [NC,QSA,L]
+
+# 8. Handle contact_detail and domain_Url
+RewriteRule ^contact_detail$ index.php?route=contact_detail [NC,QSA,L]
+RewriteRule ^domain_Url$ index.php?route=domain_Url [NC,QSA,L]
+
+# 9. Handle auth, authenticate, AraeQk5TJYd3bggpYKjw, and playlist_info
+RewriteRule ^auth$ index.php?route=auth [NC,QSA,L]
+RewriteRule ^auth.php$ index.php?route=auth [NC,QSA,L]
+RewriteRule ^authenticate$ index.php?route=authenticate [NC,QSA,L]
+RewriteRule ^authenticate.php$ index.php?route=authenticate [NC,QSA,L]
+RewriteRule ^AraeQk5TJYd3bggpYKjw$ index.php?route=AraeQk5TJYd3bggpYKjw [NC,QSA,L]
+RewriteRule ^playlist_info$ index.php?route=playlist_info [NC,QSA,L]
+
+# 10. Handle update/updaterequest_bob
+RewriteRule ^update/updaterequest_bob$ index.php?route=update/updaterequest_bob [NC,QSA,L]
+RewriteRule ^update/updaterequest_bob/[\d.]+$ index.php?route=update/updaterequest_bob [NC,QSA,L]
+
+# 11. Handle add and update
+RewriteRule ^add$ index.php?route=add [NC,QSA,L]
+RewriteRule ^add.php$ index.php?route=add [NC,QSA,L]
+RewriteRule ^update$ index.php?route=update [NC,QSA,L]
+RewriteRule ^update.php$ index.php?route=update [NC,QSA,L]
+RewriteRule ^update_playlist$ index.php?route=update [NC,QSA,L]
+
+# 12. Handle ahvu17
+RewriteRule ^ahvu17/?$ index.php?route=ahvu17 [NC,QSA,L]
+RewriteRule ^ahvu17/add$ index.php?route=add/ahvu17 [NC,QSA,L]
+RewriteRule ^ahvu17/update$ index.php?route=update/ahvu17 [NC,QSA,L]
+RewriteRule ^ahvu17/auth$ index.php?route=auth/ahvu17 [NC,QSA,L]
+RewriteRule ^ahvu17/backdrop.php$ webview.php?fetch=background_alt [NC,QSA,L]
+
+# 13. Handle non-existent files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]

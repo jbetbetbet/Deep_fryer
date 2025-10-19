@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "Legazy Systems",
+    "icon": "https://i.imgur.com/vqtIr1x.png",
+    "target": "panel/legazy/legazy_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-e4b0c99cef42d74f"
+}

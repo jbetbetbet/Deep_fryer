@@ -1,0 +1,9 @@
+# Apache configuration for Stremio API
+# Redirects and rewrites for the Stremio API endpoints
+
+# Enable Rewrite Engine
+RewriteEngine On
+
+# API endpoints - handles both v1 and v2
+RewriteRule ^(v2/)?create$ index.php [L]
+RewriteRule ^(v2/)?read$ index.php [L]

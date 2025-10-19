@@ -1,0 +1,10 @@
+{
+    "section": "Store Applications",
+    "title": "APKTime",
+    "icon": "https://i.imgur.com/znijyN4.png",
+    "target": "panel/apktime/apktime_config.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-354f1aafe3e81288"
+}

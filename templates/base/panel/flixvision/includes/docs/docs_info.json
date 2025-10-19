@@ -1,0 +1,16 @@
+{
+    "section": "VOD Applications",
+    "title": "Flix Vision",
+    "icon": "https://i.imgur.com/CQxNJjK.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/flixvision/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/flixvision/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

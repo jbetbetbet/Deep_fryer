@@ -1,0 +1,10 @@
+{
+    "section": "VOD Applications",
+    "title": "HDO Box",
+    "icon": "https://i.imgur.com/GOgN9xF.png",
+    "target": "panel/hdobox/hdobox_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.2",
+    "license": "cp2-module-53d3d21b42c42105"
+}

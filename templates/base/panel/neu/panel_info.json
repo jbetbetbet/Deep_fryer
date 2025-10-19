@@ -1,0 +1,31 @@
+{
+    "section": "OTT Applications",
+    "title": "Purple Neu",
+    "icon": "https://i.imgur.com/E9dZ2Dn.png",
+    "target": "panel/neu/neu_services.php",
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Clients",
+            "target": "panel/neu/neu_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Reports & Requests",
+            "target": "panel/neu/neu_reports.php",
+            "enabled": true
+        },
+        {
+            "title": "Notifications",
+            "target": "panel/neu/neu_notifications.php",
+            "enabled": true
+        },
+        {
+            "title": "Settings",
+            "target": "panel/neu/neu_settings.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.1",
+    "license": "cp2-module-a56d5b816daecd00"
+}

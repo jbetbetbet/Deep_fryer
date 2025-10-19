@@ -1,0 +1,19 @@
+# Apache configuration for WebView API
+# Redirects and rewrites for the WebView API endpoints
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect nested webview paths
+RewriteRule ^webview/webview/(.*)$ webview/$1 [L,R=301]
+
+# TheSportsDB WebView routes
+RewriteRule ^sport_top$ thesportsdb.php?page=sport_top [NC,L]
+RewriteRule ^sport_tv_today$ thesportsdb.php?page=sport_tv_today [NC,L]
+RewriteRule ^sport_l_table$ thesportsdb.php?page=sport_l_table [NC,L]
+RewriteRule ^sport_l_cards$ thesportsdb.php?page=sport_l_cards [NC,L]
+
+# Handle non-existent files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]

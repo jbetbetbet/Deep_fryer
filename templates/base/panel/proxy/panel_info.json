@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "Multi-service Proxy",
+    "icon": "https://i.imgur.com/mgtUBgN.png",
+    "target": "panel/proxy/multi_service_proxy.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cockpit-dabe2a3664dc44fc"
+}

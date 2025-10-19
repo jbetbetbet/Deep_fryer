@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "IBO Solutions",
+    "icon": "https://i.imgur.com/z13H3dJ.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/ibosol/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/ibosol/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

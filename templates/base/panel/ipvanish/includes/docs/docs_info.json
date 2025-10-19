@@ -1,0 +1,16 @@
+{
+    "section": "VPN Applications",
+    "title": "IPVanish",
+    "icon": "https://i.imgur.com/RjuF04C.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/ipvanish/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/ipvanish/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

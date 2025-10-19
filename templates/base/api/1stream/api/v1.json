@@ -1,0 +1,137 @@
+{
+	"endpoint": {
+		"verifyDevice": "https://login.purpletv.app/api/verifyDeviceCode",
+		"playlist": "https://login.purpletv.app/api/playlistByDevice",
+		"mackey": "https://login.purpletv.app/api/playlistByMacKey",
+		"qr_data": "https://login.purpletv.app",
+		"register": "https://cloud.purpletv.app/register",
+		"login": "https://cloud.purpletv.app/login",
+		"create_playlist": "https://cloud.purpletv.app/createplaylist",
+		"create_subprofile": "https://cloud.purpletv.app/subprofile",
+		"create_history": "https://cloud.purpletv.app/createhistory",
+		"create_fav": "https://cloud.purpletv.app/createfavorites",
+		"update_playlist": "https://cloud.purpletv.app/updateplaylist",
+		"get_subprofile": "https://cloud.purpletv.app/getsubprofile",
+		"list_get": "https://cloud.purpletv.app/getList",
+		"list_m3u_update": "https://cloud.purpletv.app/m3u",
+		"deleteurl": "https://cloud.purpletv.app/deleteurl",
+		"list_xstream_update": "https://cloud.purpletv.app/xstream",
+		"app_api_endpoint": "https://endpoint.purpletv.app/purplemain/panelapi/api.php?code="
+
+	},
+	"flag": {
+		"login_id_pin": true,
+		"login_activate": true,
+		"login_qr": true,
+		"login_code_universal": true,
+		"login_mac_key": true
+	},
+	"content": {
+		"qr_step": "1) Open https://form.purpletv.app/ in browser\n\n2) Add Six digit code in form'\n\n3) Add Xtream or M3u details and 'Submit'\n\n4) Screen will Refresh and Show your playlist profile",
+		"mackey_step": "1) Register or Login at https://login.purpletv.app/login\n\n2) Navigate To Playlist > Add New Playlist and then My Devices > Add New Device. \n\n3) Enter Device Id and Device Key and Choose your playlist and 'Submit'.\n",
+		"activation_step": "1) Register or Login at https://login.purpletv.app/login\n\n2) Click To 'Add New Device' And 'Add New Playlist'\n\n3) Assign Devices To Playlist and 'Submit'\n\n4) Enter the 'Device Code' in the box below",
+		"ads_txt": "display your ads here\n\nsupport@purplesmarttv.com",
+		"legal_msg": ""
+	},
+	"language": {
+		"defult_language": "EN",
+		"firstime_select_language": "false"
+	},
+	"ads": {
+		"ads_app_id": "",
+		"ads_banner": "/200463343/300x250_inHouse_banner",
+		"ads_banner_mobile": "/200463343/300x250_inHouse_banner",
+		"ads_intrestial": "",
+		"ads_rewarded": "",
+		"ads_native": "",
+		"ads_intrestial_time_delay": 10000,
+		"ads_ios_status": "false",
+		"ads_status": "false",
+		"vast_ads": {
+			"live_tv": {
+				"app_vast_ads_s_status": "true",
+				"app_vast_ads_s_full": "false",
+				"app_vast_ads_s": "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/206696744,22518463368/PurpleTv/purplesmartv_video&description_url=https%3A%2F%2Fpurplesmarttv.com%2F&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=",
+				"app_vast_ads_h_status": "false",
+				"app_vast_ads_h": "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/206696744,22518463368/PurpleTv/purplesmartv_video&description_url=https%3A%2F%2Fpurplesmarttv.com%2F&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator="
+			},
+			"vod": {
+				"app_vast_ads_s_status": "true",
+				"app_vast_ads_s": "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/206696744,22518463368/PurpleTv/purplesmartv_video&description_url=https%3A%2F%2Fpurplesmarttv.com%2F&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=",
+				"app_vast_ads_h_status": "false",
+				"app_vast_ads_h": "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/206696744,22518463368/PurpleTv/purplesmartv_video&description_url=https%3A%2F%2Fpurplesmarttv.com%2F&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator="
+			},
+			"show": {
+				"app_vast_ads_s_status": "true",
+				"app_vast_ads_s": "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/206696744,22518463368/PurpleTv/purplesmartv_video&description_url=https%3A%2F%2Fpurplesmarttv.com%2F&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=",
+				"app_vast_ads_h_status": "false",
+				"app_vast_ads_h": "https://pubads.g.doubleclick.net/gampad/live/ads?iu=/206696744,22518463368/PurpleTv/purplesmartv_video&description_url=https%3A%2F%2Fpurplesmarttv.com%2F&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator="
+			},
+			"fallback":"https://pubads.g.doubleclick.net/gampad/live/ads?iu=/206696744,22518463368/PurpleTv/purplesmartv_video&description_url=https%3A%2F%2Fpurplesmarttv.com%2F&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=",
+			"fallback_backup":"https://pubads.g.doubleclick.net/gampad/live/ads?iu=/206696744,22518463368/PurpleTv/purplesmartv_video&description_url=https%3A%2F%2Fpurplesmarttv.com%2F&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator="
+	
+		}
+	},
+	"version": {
+		"version_check": "false",
+		"version_code": "7",
+		"version_name": "7.0",
+		"version_download_url": "https://tinyurl.com/purpleiptv1",
+		"version_download_url_apk": "",
+		"version_force_update": "false",
+		"version_update_msg": "Please Update for looking Glass",
+		"version_changelog": [
+
+		]
+	},
+	"player": {
+		"live_tv": "Exo Player",
+		"vod": "Exo Player",
+		"series": "Exo Player",
+		"catch_up": "Exo Player"
+	},
+
+	"app_announce": [
+
+	],
+	"maintenance_msg": [
+
+	],
+	"app_image": {
+		"app_img": "true",
+		"app_video": "https://uploads.plutio.com/s/RRwJuez8SU1.8iHyOi4KWG77kCOWtNey9uwrlFXPCWXVrnG6q4wXJ5lTqUnP-video--2-.mp4",
+		"app_logo": "https://panel.purpletv.app/uploads/app_images/e99e98ed-f127-42da-9581-a067c8358df4.png",
+		"app_mobile_icon": "https://panel.purpletv.app/uploads/app_images/889f0b63-646e-4185-b482-055bbaaab6e2.png",
+		"app_tv_banner": "https://panel.purpletv.app/uploads/app_images/d402f7fc-6081-4dfa-8220-d74238774eeb.png",
+		"splash_image": "https://panel.purpletv.app/uploads/app_images/b24510ce-9891-44d3-8eb0-eb7e2fbd0455.png",
+		"back_image": "https://panel.purpletv.app/uploads/app_images/b8002866-b9cf-47ab-a55f-e6010cc478ff.png"
+	},
+
+	"api_key": {
+		"imdb_api": "",
+		"g_api_key": "",
+		"image_imdb": "",
+		"trakt_api_key": "",
+		"weather_api": "",
+		"ip_stack_key": "",
+		"check_ip": "https://checkip.justwatch.com",
+		"vpn": "true",
+		"vpn_url": "https://panel.purpletv.app/api/vpn?code=ADEDED",
+		"vpn_username": "jacktaylor963@outlook.com",
+		"vpn_password": "0bd8003fa41f8550891ed69c5a5696b1fb5e912e",
+		"analyt_key" : "181b306d2ea13f466b5e28a70d9df96858790acd",
+		"analyt_server" : "http://countly.guidemefast.com",
+		"appcenter" : "c5b165ad-397f-4531-b144-2cc56406645f"
+	},
+	"weather": {
+		"city_name": "",
+		"city_id": ""
+	},
+
+	"agreement": {
+		"privacy_policy": "https://www.iubenda.com/privacy-policy/68919995",
+		"terms_condtion": "",
+		"copyright_complaint": ""
+	}
+
+}

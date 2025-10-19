@@ -1,0 +1,31 @@
+{
+    "section": "OTT Applications",
+    "title": "Q Deluxe",
+    "icon": "https://i.imgur.com/msQojuX.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Settings",
+            "target": "panel/qdeluxe/qdeluxe_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Configuration",
+            "target": "panel/qdeluxe/qdeluxe_settings.php",
+            "enabled": true
+        },
+        {
+            "title": "Reports",
+            "target": "panel/qdeluxe/qdeluxe_reports.php",
+            "enabled": true
+        },
+        {
+            "title": "Messages",
+            "target": "panel/qdeluxe/qdeluxe_messages.php",
+            "enabled": true
+        }
+    ],
+    "version": "1.0.0",
+    "license": "cp2-module-6fc792e02c266420"
+}

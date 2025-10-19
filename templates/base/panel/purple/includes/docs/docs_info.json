@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Purple Player",
+    "icon": "https://i.imgur.com/DIUv5jl.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/purple/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/purple/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

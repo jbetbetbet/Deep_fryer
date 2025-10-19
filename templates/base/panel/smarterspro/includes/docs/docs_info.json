@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Smarters Pro",
+    "icon": "https://i.imgur.com/iEb97E1.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/smarterspro/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/smarterspro/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

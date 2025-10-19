@@ -1,0 +1,8 @@
+# Apache configuration for Sparkle API
+# Redirects and rewrites for the Sparkle API endpoints
+
+# Enable rewrite engine
+RewriteEngine On
+
+# API endpoints rewrites
+RewriteRule ^(ads.php)$ adview.php [NC,L]

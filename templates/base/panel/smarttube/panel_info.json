@@ -1,0 +1,10 @@
+{
+    "section": "VOD Applications",
+    "title": "SmartTube",
+    "icon": "https://i.imgur.com/dOjhvLv.png",
+    "target": "panel/smarttube/smarttube_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.2",
+    "license": "cp2-module-78e5efd7cb107a55"
+}

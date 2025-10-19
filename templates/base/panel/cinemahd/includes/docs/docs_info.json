@@ -1,0 +1,16 @@
+{
+    "section": "VOD Applications",
+    "title": "CinemaHD",
+    "icon": "https://i.imgur.com/ryHBvdy.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/cinemahd/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/cinemahd/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

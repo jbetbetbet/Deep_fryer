@@ -1,0 +1,21 @@
+{
+    "section": "Store Applications",
+    "title": "S9H Store",
+    "icon": "https://i.imgur.com/aVueFmt.png",
+    "target": "panel/s9hstore/s9hstore_config.php",
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Clients",
+            "target": "panel/s9hstore/s9hstore_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Configuration",
+            "target": "panel/s9hstore/s9hstore_config.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.1",
+    "license": "cp2-module-89ff1f4b01cf0841"
+}

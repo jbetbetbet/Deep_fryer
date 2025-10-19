@@ -1,0 +1,36 @@
+{
+    "section": "OTT Applications",
+    "title": "Smarters Pro",
+    "icon": "https://i.imgur.com/iEb97E1.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Settings",
+            "target": "panel/smarterspro/smarters_pro_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Announcements & Ads",
+            "target": "panel/smarterspro/smarters_pro_banners.php",
+            "enabled": true
+        },
+        {
+            "title": "Feedback & Reports",
+            "target": "panel/smarterspro/smarters_pro_feedback.php",
+            "enabled": true
+        },
+        {
+            "title": "OpenVPN Config",
+            "target": "panel/smarterspro/smarters_pro_openvpn_config.php",
+            "enabled": true
+        },
+        {
+            "title": "Custom Parts",
+            "target": "panel/smarterspro/smarters_pro_customization.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.1",
+    "license": "cp2-module-1dbb1ecd695a7e2b"
+}

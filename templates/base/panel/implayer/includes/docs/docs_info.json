@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "iMPlayer TV",
+    "icon": "https://i.imgur.com/88ScGTg.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/implayer/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/implayer/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

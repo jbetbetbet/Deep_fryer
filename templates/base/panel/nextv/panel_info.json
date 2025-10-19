@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "NexTv IPTV",
+    "icon": "https://i.imgur.com/PkmigBn.png",
+    "target": "panel/nextv/nextv_iptv_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.2",
+    "license": "cp2-module-cc35a5fdeaec36b4"
+}

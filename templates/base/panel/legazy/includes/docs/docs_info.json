@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Legazy Systems",
+    "icon": "https://i.imgur.com/vqtIr1x.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/legazy/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/legazy/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

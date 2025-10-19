@@ -1,0 +1,33 @@
+# APKTime API URL Rewriting Configuration
+# This file configures URL rewriting for the APKTime API endpoints
+# It allows client apps to access XML endpoints with standard filenames
+# while the server processes them using PHP scripts
+
+# Enable the Apache rewrite engine
+RewriteEngine On
+
+# APKTime XML API Endpoints
+# Map user-friendly XML URLs to their PHP handler scripts
+
+# Map apktime2.xml requests to the apktime2.php processor
+# This endpoint provides application listings for the APKTime client
+RewriteRule ^apktime2\.xml$ apktime2.php [L,QSA]
+
+# Map update.xml requests to the update.php processor
+# This endpoint provides version information for APKTime client updates
+RewriteRule ^update\.xml$ update.php [L,QSA]
+
+# L flag = Last rule, stop processing rules if this one matches
+# QSA flag = Query String Append, preserves query parameters in the request
+
+# Additional security headers
+<IfModule mod_headers.c>
+  # Prevent MIME-sniffing
+  Header set X-Content-Type-Options "nosniff"
+  
+  # Enable XSS protection in browsers
+  Header set X-XSS-Protection "1; mode=block"
+  
+  # Prevent clickjacking
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>

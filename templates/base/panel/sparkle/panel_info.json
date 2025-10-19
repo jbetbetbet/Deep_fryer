@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "Sparkle TV",
+    "icon": "https://i.imgur.com/qKEbeXG.png",
+    "target": "panel/sparkle/sparkle_tv_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-ee5303126c0e12e7"
+}

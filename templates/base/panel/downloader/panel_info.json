@@ -1,0 +1,10 @@
+{
+    "section": "Store Applications",
+    "title": "Downloader",
+    "icon": "https://i.imgur.com/cKvEC3w.png",
+    "target": "panel/downloader/downloader_config.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-e1a6074e271e3189"
+}

@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "StbEmu Pro",
+    "icon": "https://i.imgur.com/8D7TCZO.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/stbemu/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/stbemu/includes/docs/faq.php"
+        }
+    ],
+    "version": "1.0.0"
+}

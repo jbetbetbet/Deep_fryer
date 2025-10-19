@@ -1,0 +1,26 @@
+{
+    "section": "OTT Applications",
+    "title": "Flix IPTV",
+    "icon": "https://i.imgur.com/vf6hRKM.png",
+    "target": "panel/flixiptv/flixiptv_services.php",
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services & Clients",
+            "target": "panel/flixiptv/flixiptv_services.php",
+            "enabled": true
+        },
+        {
+            "title": "App Settings",
+            "target": "panel/flixiptv/flixiptv_settings.php",
+            "enabled": true
+        },
+        {
+            "title": "Languages",
+            "target": "panel/flixiptv/flixiptv_languages.php",
+            "enabled": true
+        }
+    ],
+    "version": "1.0.1",
+    "license": "cp2-module-d8229fa81da2f764"
+}

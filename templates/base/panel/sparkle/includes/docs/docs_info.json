@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Sparkle TV",
+    "icon": "https://i.imgur.com/qKEbeXG.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/sparkle/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/sparkle/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

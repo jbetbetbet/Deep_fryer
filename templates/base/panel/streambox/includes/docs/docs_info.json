@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "StreamBox",
+    "icon": "https://i.imgur.com/qHBgnHI.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/streambox/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/streambox/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

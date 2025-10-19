@@ -1,0 +1,19 @@
+# Purple API - URL Rewriting Configuration
+#
+# This .htaccess file configures URL rewriting for the Purple API service.
+# It handles routing for various API endpoints to their appropriate handlers.
+#
+# @package Cockpit
+# @subpackage Purple
+
+# Enable rewrite engine for URL routing
+RewriteEngine On
+
+# API Routing Rules
+RewriteRule ^config.php$ api.php [NC,L]
+RewriteRule ^v1/main.php$ gp.php [NC,L]
+RewriteRule ^main.php$ gp.php [NC,L]
+RewriteRule ^gp/v(1|2|3|4|5|6|7)\.json$ gp.php [NC,L]
+RewriteRule ^(sport.php|sports.php)$ webview.php?fetch=sport [NC,L]
+RewriteRule ^sport_top.php$ webview.php?fetch=sport_top [NC,L]
+RewriteRule ^sport_tv_today.php$ webview.php?fetch=sport_tv_today [NC,L]

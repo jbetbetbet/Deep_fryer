@@ -1,0 +1,29 @@
+# FCD API URL Rewriting Configuration
+# This file configures URL rewriting for the FCD module endpoints
+# It enables client applications to access API functions using a folder-based URL structure
+# Format: /client_code/endpoint.php → /endpoint.php?code=client_code
+
+# Enable the Apache rewrite engine
+RewriteEngine On
+
+# Client Code URL Pattern Rewriting
+# Maps URLs in the format /{client_code}/{endpoint}.php to /{endpoint}.php?code={client_code}
+# This allows each client to have a unique "folder" that actually passes their client code as a parameter
+# Supported endpoints: control.php, rss.php, addons.php, store.php
+
+# Match URLs with pattern /{client_code}/{endpoint}.php and convert to /{endpoint}.php?code={client_code}
+RewriteCond %{REQUEST_URI} ^.*/([a-zA-Z0-9_-]+)/(control|rss|addons|store)\.php$ [NC]
+RewriteRule ^(.*/)?([a-zA-Z0-9_-]+)/(control|rss|addons|store)\.php$ $1$3.php?code=$2 [QSA,L]
+
+# Pattern Explanation:
+# ^(.*/)?                                    - Optional path prefix
+# ([a-zA-Z0-9_-]+)                           - Client code (alphanumeric, underscore, dash)
+# /(control|rss|addons|store)\.php$          - Supported endpoint filenames
+# $1$3.php?code=$2                           - Rewritten URL format
+# [QSA,L]                                    - QSA = append query string, L = last rule
+
+# Example URL transformations:
+# /api/fcd/client123/control.php             → /api/fcd/control.php?code=client123
+# /api/fcd/client123/rss.php?param=value     → /api/fcd/rss.php?code=client123&param=value
+# /api/fcd/client123/addons.php              → /api/fcd/addons.php?code=client123
+# /api/fcd/client123/store.php               → /api/fcd/store.php?code=client123

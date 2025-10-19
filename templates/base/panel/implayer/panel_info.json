@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "iMPlayer TV",
+    "icon": "https://i.imgur.com/88ScGTg.png",
+    "target": "panel/implayer/implayer_tv_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-709f6fb23c356574"
+}

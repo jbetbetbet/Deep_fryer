@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "Smart STB+",
+    "icon": "https://i.imgur.com/sbOhfZh.png",
+    "target": "panel/smartstb/smartstb_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "1.0.0",
+    "license": "cp2-module-19deb20c4c4f4e97"
+}

@@ -1,0 +1,16 @@
+{
+    "section": "Store Applications",
+    "title": "APKTime",
+    "icon": "https://i.imgur.com/znijyN4.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/apktime/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/apktime/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

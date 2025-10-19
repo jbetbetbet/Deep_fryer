@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "LTQ2",
+    "icon": "https://i.imgur.com/5GYEXZD.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/ltq2/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/ltq2/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

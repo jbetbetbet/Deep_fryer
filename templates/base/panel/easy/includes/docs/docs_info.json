@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Easy Player",
+    "icon": "https://i.imgur.com/etTrMvy.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/easy/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/easy/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

@@ -1,0 +1,26 @@
+{
+    "section": "OTT Applications",
+    "title": "StreamBox",
+    "icon": "https://i.imgur.com/qHBgnHI.png",
+    "target": null,
+    "dropdown": true,
+    "pages": [
+        {
+            "title": "Services",
+            "target": "panel/streambox/streambox_services.php",
+            "enabled": true
+        },
+        {
+            "title": "Configuration",
+            "target": "panel/streambox/streambox_settings.php",
+            "enabled": true
+        },
+        {
+            "title": "Feedback & Reports",
+            "target": "panel/streambox/streambox_feedback.php",
+            "enabled": true
+        }
+    ],
+    "version": "2.6.1",
+    "license": "cp2-module-40341810ccf77c71"
+}

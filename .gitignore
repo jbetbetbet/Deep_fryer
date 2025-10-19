@@ -1,0 +1,4 @@
+secrets/
+sites/
+web/php74/ioncube/
+web/php74/mitmproxy-ca-cert.pem

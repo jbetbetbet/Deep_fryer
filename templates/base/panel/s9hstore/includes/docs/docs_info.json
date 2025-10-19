@@ -1,0 +1,16 @@
+{
+    "section": "Store Applications",
+    "title": "S9H Store",
+    "icon": "https://i.imgur.com/aVueFmt.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/s9hstore/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/s9hstore/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

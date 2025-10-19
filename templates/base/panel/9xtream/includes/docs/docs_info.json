@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "9Xtream",
+    "icon": "https://i.imgur.com/1BuEnVi.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/9xtream/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/9xtream/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

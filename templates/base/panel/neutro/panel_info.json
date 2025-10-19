@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "Neutro Player",
+    "icon": "https://i.imgur.com/RS7RItF.png",
+    "target": "panel/neutro/neutro_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-fe3c725488413594"
+}

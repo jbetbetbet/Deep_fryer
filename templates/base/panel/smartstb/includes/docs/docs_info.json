@@ -1,0 +1,16 @@
+{
+    "section": "OTT Applications",
+    "title": "Smart STB+",
+    "icon": "https://i.imgur.com/sbOhfZh.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/smartstb/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/smartstb/includes/docs/faq.php"
+        }
+    ],
+    "version": "1.0.0"
+}

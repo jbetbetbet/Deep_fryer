@@ -1,0 +1,10 @@
+{
+    "section": "OTT Applications",
+    "title": "MYTVOnline",
+    "icon": "https://i.imgur.com/CNAz8Pa.png",
+    "target": "panel/mytvonline/mytvonline_services.php",
+    "dropdown": false,
+    "pages": [],
+    "version": "2.6.1",
+    "license": "cp2-module-486f1510ad789b7f"
+}

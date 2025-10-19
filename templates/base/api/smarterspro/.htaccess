@@ -1,0 +1,127 @@
+# Smarters Pro API - Apache URL Rewrite Configuration
+#
+# This file controls URL rewriting for the Smarters Pro API.
+# It handles API endpoints, sports content routes, and security settings.
+#
+# @package Cockpit
+# @subpackage SmartersPro
+# @version See version.json
+
+# Enable URL rewriting engine and disable trailing slashes
+RewriteEngine On
+DirectorySlash Off
+
+# Protect .htaccess file
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# -----------------
+# LEGACY REDIRECTS
+# -----------------
+# Redirect Cpv1 to Cpv2 (maintain backward compatibility)
+RewriteRule ^(.*)/whmcssmarters(.*)$ $1/smarterspro$2 [R=301,L]
+
+# -----------------
+# DNS AND CORE API ROUTES
+# -----------------
+# Special case for Android app DNS resolution
+RewriteCond %{QUERY_STRING} ^/Android$
+RewriteRule ^$ dns.php [L]
+
+# DNS API endpoints (with and without .php)
+RewriteRule ^api/dns(\.php)?$ dns.php [QSA,L]
+RewriteRule ^api/windns(\.html)?$ dns.php [QSA,L]
+
+# Core API endpoints (with and without .php)
+RewriteRule ^api/api(\.php)?$ api.php [QSA,L]
+RewriteRule ^api/home(\.php)?$ home.php [QSA,L]
+RewriteRule ^api/player_api(\.php)?$ player_api.php [QSA,L]
+RewriteRule ^api/rate(\.php)?$ rate.php [QSA,L]
+RewriteRule ^api/response_api(\.php)?$ response_api.php [QSA,L]
+RewriteRule ^api/update(\.php)?$ update.php [QSA,L]
+RewriteRule ^api/vpn(\.php)?$ vpn.php [QSA,L]
+
+# -----------------
+# SPORT API ROUTES
+# -----------------
+# API Sport routes - direct to PHP files
+RewriteRule ^api/sport(\.php)?$ api/sport.php [QSA,L]
+RewriteRule ^api/sport_l_table(\.php)?$ api/sport_l_table.php [QSA,L]
+RewriteRule ^api/sport_l_table_single(\.php)?$ api/sport_l_table_single.php [QSA,L]
+RewriteRule ^api/sport_top(\.php)?$ api/sport_top.php [QSA,L]
+RewriteRule ^api/sport_tv_today(\.php)?$ api/sport_tv_today.php [QSA,L]
+RewriteRule ^api/lookuptv(\.php)?$ api/lookuptv.php [QSA,L]
+RewriteRule ^api/pl_buttons(\.php)?$ api/pl_buttons.php [QSA,L]
+RewriteRule ^api/RTXSport(\.php)?$ api/RTXSport.php [QSA,L]
+
+# Legacy sports routes (kept for backward compatibility)
+RewriteRule ^api/sports(\.php)?$ webview.php?fetch=sport [L]
+
+# Root-level sport routes
+RewriteRule ^sport(\.php)?$ api/sport.php [NC,QSA,L]
+RewriteRule ^sports(\.php)?$ api/sport.php [NC,QSA,L]
+RewriteRule ^sport_top(\.php)?$ api/sport_top.php [NC,QSA,L]
+RewriteRule ^sport_tv_today(\.php)?$ api/sport_tv_today.php [NC,QSA,L]
+RewriteRule ^sport_l_table(\.php)?$ api/sport_l_table.php [NC,QSA,L]
+RewriteRule ^sport_l_table_single(\.php)?$ api/sport_l_table_single.php [NC,QSA,L]
+
+# -----------------
+# ADVERTISEMENT ROUTES
+# -----------------
+# API ad routes
+RewriteRule ^api/ads(\.php)?$ ads.php?ad-type=webview [L]
+RewriteRule ^api/adview(\.php)?$ ads.php?ad-type=webview [L]
+RewriteRule ^api/combo(\.php)?$ ads.php?ad-type=webview [L]
+RewriteRule ^api/autoads(\.php)?$ ads.php?ad-type=webview [L]
+RewriteRule ^api/menads(\.php)?$ ads.php?ad-type=webview [L]
+
+# Root level ad routes
+RewriteRule ^adpage(\.php)?$ ads.php?ad-type=webview [L]
+RewriteRule ^adview(\.php)?$ ads.php?ad-type=webview [L]
+RewriteRule ^ads(\.php)?$ ads.php?ad-type=webview [L]
+RewriteRule ^combo(\.php)?$ ads.php?ad-type=webview [L]
+RewriteRule ^autoads(\.php)?$ ads.php?ad-type=webview [L]
+RewriteRule ^menads(\.php)?$ ads.php?ad-type=webview [L]
+
+# Special API ad routes
+RewriteRule ^api(\.php)?\?type=vod$ ads.php [L]
+RewriteRule ^api(\.php)?\?type=series$ ads.php [L]
+RewriteRule ^response(\.php)?(\?action=alldata)?$ ads.php [L]
+
+# -----------------
+# UI ELEMENT ROUTES
+# -----------------
+# API intro/background routes
+RewriteRule ^api/intro(\.php)?$ images.php?type=intro [L]
+RewriteRule ^api/backdrop(\.php)?$ webview.php?fetch=background_alt [L]
+
+# Root-level intro/background routes
+RewriteRule ^intro(\.php)?$ images.php?type=intro [L]
+RewriteRule ^backdrop(\.php)?$ webview.php?fetch=background_alt [L]
+
+# Image routes
+RewriteRule ^logo/bg(\.php)?$ images.php?type=logo [L]
+RewriteRule ^Background/bg(\.php)?$ images.php?type=bg [L]
+
+# -----------------
+# VPN ROUTES
+# -----------------
+# OpenVPN configuration routes
+RewriteRule ^ovpnfile\.txt$ ovpnfile.php [L]
+RewriteRule ^ovpn\.zip$ vpn.php [L]
+RewriteRule ^vpncertificate\.zip$ vpn.php [L]
+
+# -----------------
+# EXTENDED API ROUTES
+# -----------------
+# GraphQL API routes
+RewriteRule ^discover(\.php)?$ graphql.php [L]
+
+# -----------------
+# GLOBAL PHP EXTENSION HANDLING
+# -----------------
+# Allow accessing PHP files without the .php extension
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]

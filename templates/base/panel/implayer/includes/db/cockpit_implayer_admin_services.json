@@ -1,0 +1,11 @@
+{
+    "show_services_card": "true",
+    "show_settings_card": "true",
+    "show_version_code": "true",
+    "show_apk_url": "true",
+    "show_change_log": "true",
+    "show_force_update": "true",
+    "show_xor_encoding": "true",
+    "show_rsa_aes_encoding": "true",
+    "show_external_apps_card": "false"
+}

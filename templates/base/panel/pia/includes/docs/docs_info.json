@@ -1,0 +1,16 @@
+{
+    "section": "VPN Applications",
+    "title": "Private Internet Access",
+    "icon": "https://i.imgur.com/FMV7wcF.png",
+    "pages": [
+        {
+            "title": "Endpoints",
+            "target": "panel/pia/includes/docs/endpoints.php"
+        },
+        {
+            "title": "FAQ",
+            "target": "panel/pia/includes/docs/faq.php"
+        }
+    ],
+    "version": "2.0.0"
+}

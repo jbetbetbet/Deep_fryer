@@ -1,0 +1,30 @@
+# NEU API URL Rewriting Configuration
+#
+# This .htaccess file defines URL rewriting rules for the NEU API.
+# It enables clean URLs by mapping user-friendly paths to their corresponding PHP scripts.
+#
+# @package Cockpit
+# @subpackage NEU
+# @author Ian O'Neill
+# @version See version.json
+
+# Enable Apache's URL rewriting engine
+RewriteEngine On
+
+# Map specific API endpoints to android.php
+# This allows multiple URL patterns to be handled by the same script
+
+# Map versioned endpoint v1/android.json to android.php
+RewriteRule ^v1/android\.json$ android.php [NC,L]
+
+# Map root android.json to android.php
+RewriteRule ^android\.json$ android.php [NC,L]
+
+# Map legacy api.php endpoint to android.php
+RewriteRule ^api\.php$ android.php [NC,L]
+
+# Generic rule to map clean URLs to their PHP handlers
+# For example, "settings" would be mapped to "settings.php"
+# Only proceed if the PHP file actually exists
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
